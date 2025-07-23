@@ -22,3 +22,18 @@ buildNumber.properties
 **/target
 .idea
 **/.gitignore
+
+
+# IDE-specific files
+*.iml
+*.ipr
+*.iws
+
+# Local environment variable files (if any)
+.env
+.env.local
+*.log
+*.lock
+
+# Maven caches
+.m2/repository/
