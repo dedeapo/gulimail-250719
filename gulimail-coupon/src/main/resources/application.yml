@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    username: root
+    password: Tptsct1234
+    url: jdbc:mysql://101.126.142.150:3306/gulimail_sms?useSSL=false&serverTimezone=UTC&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+
+server:
+  port: 7000

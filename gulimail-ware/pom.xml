@@ -11,7 +11,7 @@
     <groupId>com.atguigu.gulimail.ware</groupId>
     <artifactId>gulimail-ware</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>gulimail-ware</name>
+    <name>gulimail-库存系统</name>
     <description>gulimail-ware</description>
     <url/>
     <licenses>
@@ -31,6 +31,11 @@
         <spring-cloud.version>2021.0.8</spring-cloud.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>com.atguigu.gulimail</groupId>
+            <artifactId>gulimail-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
