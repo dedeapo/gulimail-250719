@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: gulimail-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      routes:
+        - id: route-name
+          uri: https://www.baidu.com
+          predicates:
+            - Query=url,baidu
+server:
+  port: 88

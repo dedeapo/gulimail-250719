@@ -4,7 +4,19 @@ spring:
     password: Tptsct1234
     url: jdbc:mysql://101.126.142.150:3306/gulimail_ums?useSSL=false&serverTimezone=UTC&characterEncoding=utf8
     driver-class-name: com.mysql.cj.jdbc.Driver
-
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        ip: 127.0.0.1
+      config:
+        import-check:
+          enabled: false
+  application:
+    name: gulimail-member
+  config:
+    import:
+      - optional:nacos：
 
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**/*.xml
